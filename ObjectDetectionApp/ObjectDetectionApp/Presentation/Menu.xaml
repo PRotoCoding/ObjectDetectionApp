@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="ObjectDetectionApp.Presentation.Menu"
+             NavigationPage.HasNavigationBar="false">
+
+    <RelativeLayout x:Name="relLayout" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <!-- Place new controls here Source="https://vignette.wikia.nocookie.net/ffg-android-universe/images/5/50/Wiki-background/revision/latest?cb=20141117170211" -->
+        <Image Source ="background.png" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+               Aspect="AspectFill">
+        </Image>
+        <AbsoluteLayout x:Name="absLayout" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            <!--Image CyberDog will be placed here by CS code /-->
+        </AbsoluteLayout>
+        <!-- Grid for User Controls /> -->
+        <Grid x:Name="grid" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+    </RelativeLayout>
+
+</ContentPage>
